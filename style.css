@@ -443,7 +443,7 @@ background-color: rgb(199, 198, 198);
 }
 .offers__heder__content {
 	margin-top: 20px;
-	color: var(--color-background);
+	color: var(--color-second);
 	font-family: var(--font-family-hedar-content);
 	font-size: var(--font-size-hedar-content);
 	font-weight: 600;
