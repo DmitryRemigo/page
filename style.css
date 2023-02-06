@@ -7,7 +7,7 @@ a {text-decoration:none;}
 :root {
   --color-main: #4a145a;
 	--color-second: #bdffff;
-	--color-accent: #e41b1b;
+	--color-accent: #ffee00;
 	--color-background: #f4f4ef;
 	--padding-content: 0px 12px;
 	--font-size-hedar-logo: 18px;
@@ -204,8 +204,7 @@ background-color: rgb(199, 198, 198);
 	font-size: var(--font-size-hedar-logo);
 }
 .Razrabotka_saitov {
-	color: var(--color-background);
-	text-shadow: 0px 0px 3px var(--color-accent);
+	color: var(--color-accent);
 	font-family: "Montserrat-Regular";
 }
 .header__nav_burger {
@@ -313,18 +312,18 @@ background-color: rgb(199, 198, 198);
 	height: 7px;
 	border-radius: 50%;
 	background-color: var(--color-main);
-	border: 1px solid rgb(255, 145, 0); 
+	border: 1px solid var(--color-accent); 
 	
 }
 /*span выделить текст с совместный перенос*/
 .highlight{
-	color: rgb(255, 238, 0);
+	color: var(--color-accent);
 	font-size: 16px;
-	text-shadow: 0px 0px 5px black;
 	white-space: nowrap;
+	
 }
 .highlight__white{
-	color: var(--color-accent);
+	color: var(--color-main);
 	white-space: nowrap;	
 	font-style: italic;
 	font-weight: 600;
@@ -356,7 +355,7 @@ background-color: rgb(199, 198, 198);
 	margin-top: 15px;
 }
 .header__content__bottom__button_body {
-	background-color: rgb(241, 122, 9);
+	background-color: rgb(214, 172, 34);
 	width: 90%;
 	height: 40px;
 	display: flex;
@@ -677,14 +676,17 @@ background-color: rgb(199, 198, 198);
 	margin-top: 15px;
 }
 .advantages__bodu__second__heder__content {
-	color: var(--color-background);
+	color: var(--color-second);
 	font-family: var(--font-family-hedar-content);
-	font-size: 18px;
+	font-size: 19px;
 	text-align: center;
 	line-height: 25px;
+
 }
 .advantages__bodu__second__heder__content h3{
 	margin: 15px;
+	font-size: 16px;
+	color: var(--color-background);
 }
 .questions {
 	width: 100%;
@@ -833,15 +835,16 @@ transform: rotate(180deg);
 }
 .footer__heder {
 	margin-top: 20px;
-	color: var(--color-background);
+	color: var(--color-second);
 	font-family: var(--font-family-hedar-content);
 	font-size: 20px;
 	font-weight: 600;
 	line-height: 25px;
+	align-self: self-start;
 }
 .mail{
 	margin-top: 10px;
-	color: var(--color-background);
+	color: var(--color-accent);
 	font-family: var(--font-family-hedar-content);
 	font-size: 17px;
 	width: 100%;
@@ -878,7 +881,7 @@ transform: rotate(180deg);
 	padding: var(--padding-content);
 }
 .footer__button__body {
-	background-color: rgb(140, 19, 221);
+	background-color: var(--color-main);
 	width: 100%;
 	height: 40px;
 	display: flex;
@@ -891,7 +894,7 @@ transform: rotate(180deg);
 }
 .footer__button__body.active{
 	transform: scale(1.03,1.03);
-	background-color: rgb(94, 21, 189);
+	background-color: rgb(214, 172, 34);
 }
 
 
@@ -900,7 +903,7 @@ transform: rotate(180deg);
 	font-family: var(--font-family-hedar-content);
 	letter-spacing: 1px;
 	font-weight: bold;
-	color: var(--color-background);
+	color: var(--color-second);
 	
 }
 .footer__form{
