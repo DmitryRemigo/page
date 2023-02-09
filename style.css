@@ -2,6 +2,8 @@
 @import "fonts.css";
 @import "fonts/font-awesome-4.7.0/css/font-awesome.min.css";
 
+
+
 html.active{ overflow-y: hidden; }
 a {text-decoration:none;}
 
@@ -19,19 +21,25 @@ a {text-decoration:none;}
 
 
 .wrapper {
+display: flex;
+justify-content: center;
+background-color: black;
+}
+.wrapper__bodu{
 	background-color:  var(--color-background);
 	display: flex;
 	flex-direction: column;
 	position: relative;
 	overflow-x: hidden;	
+	max-width: 600PX;
 }
-
 
 
 .header__nav {
 	position: fixed;
 	background-color:var(--color-main);
 	width: 100%;
+	max-width: 600px;
 	height: 50px;
 	padding: var(--padding-content);
 	display: flex;
@@ -71,6 +79,7 @@ a {text-decoration:none;}
 	position: fixed;
 	height: 100vh;
 	width: 80vw;
+	max-width: 600px;
 	right: 0;
 	background-color: var(--color-background);
 	transform: translate(110vw,0px);
@@ -1281,6 +1290,7 @@ position: relative;
 	align-items: center;
 	transform: translate(500px, 0px);
 	z-index: 100;
+	opacity: 0;
 }
 .alert__write.active{
 	animation: animation-name 2s ease;
@@ -1314,4 +1324,37 @@ position: relative;
 	font-family: var(--font-family-hedar-content);
 	font-weight: 600;
 	font-size: 18px;
+}
+
+.footer__bottoms {
+	background-color: var(--color-main);
+	width: 100%;
+	display: flex;
+	justify-content: center;
+	padding: var(--padding-content);
+}
+.footer__bottoms__wrapper {
+	background-color: var(--color-main);
+	width: 100%;
+	display: flex;
+	justify-content: center;
+}
+.copyright{
+font-family: var(--font-family-hedar-content);
+margin-bottom: 10px;
+position: relative;
+width: 100%;
+display: flex;
+justify-content: center;
+}
+.copyright::before{
+	content: "";
+	position: absolute;
+	width: 100%;
+	height: 1px;
+	background-color: #7e219b;
+	bottom: 25px;
+}
+.fa-copyright{
+	margin: 0px 5px;
 }
