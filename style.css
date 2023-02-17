@@ -1,7 +1,7 @@
 @import "zero.css";
 @import "fonts.css";
 @import "fonts/font-awesome-4.7.0/css/font-awesome.min.css";
-
+@import "ui_element/style1402.css";
 
 
 html.active{ overflow-y: hidden; }
@@ -351,9 +351,30 @@ right: 90px;
 	align-items: center;
 }
 .header__content__bottom__body__description {
-	margin-top: 20px;
-	
+	color: var(--color-background);
+	font-family: var(--font-family-hedar-content);
+	font-size: 17px;
+	line-height: 20px;
+	width: 100%;
+	padding: 20px 0;
 }
+.download{
+	font-family: var(--font-family-hedar-content);
+	font-size: 17px;
+	line-height: 20px;
+	font-weight: 600;
+	display: flex;
+	color: black;
+}
+.arhive{
+	background-image: url('./img/arhive.png');
+	width: 20px;
+	height: 20px;
+	background-size: contain;
+	margin-left: 10px;
+}
+
+
 .top__description{
 	position: relative;
 	width: 100%;
@@ -504,6 +525,7 @@ opacity: 0;
 	display: flex;
 	justify-content: center;
 	width: 100%;
+	
 }
 .body__content {
 	display: flex;
@@ -643,6 +665,12 @@ opacity: 0;
 	width: 100%;
 	
 }
+.portfolio__content__body.body__button {
+display: flex;
+flex-direction: column;
+align-items: center;
+}
+
 .wedding {
 	display: flex;
 	justify-content: center;
