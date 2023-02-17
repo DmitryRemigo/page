@@ -1,0 +1,122 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+
+.button_1402 {
+	border: 2px solid #00fff2;
+	padding: 10px 30px;
+	background: #2c272c;
+	color: #fff;
+	font-family: 'Poppins', sans-serif;
+	letter-spacing: 0.1em;
+	font-size: 2em;
+	position: relative;
+	transition: 0.5s;
+	text-transform: uppercase;
+	margin-bottom: 20px;
+	
+}
+.button_1402:hover{
+	letter-spacing: 0.25em;
+	transform: scaleY(1.1);
+	border: 2px solid var(--clr);
+	box-shadow: 0 0 35px var(--clr);
+	color: var(--clr);
+}
+.element_1402 {
+	position: absolute;
+	inset: 0;
+}
+.element_1402::before{
+	content: "";
+	position: absolute;
+	border: 2px solid var(--clr);
+	background: #27282c;
+	width: 14px;
+	height: 7px;
+	left: 80%;
+	top: -4.5px;
+	transition: 0.5s;
+}
+.button_1402:hover .element_1402::before{
+	content: "";
+	width: 24px;
+	height: 7px;
+	left: 14%;
+}
+.element_1402::after{
+	content: "";
+	position: absolute;
+	border: 2px solid var(--clr);
+	background: #27282c;
+	width: 14px;
+	height: 7px;
+	left: 14%;
+	bottom: -4.5px;
+	transition: 0.5s;
+}
+.button_1402:hover .element_1402::after{
+	content: "";
+	width: 24px;
+	height: 7px;
+	left: 80%;
+}
+
+.button_1402_2 {
+	border: 2px solid #00fff2;
+	padding: 10px 30px;
+	background: #2c272c;
+	color: #fff;
+	font-family: 'Poppins', sans-serif;
+	letter-spacing: 0.1em;
+	font-size: 2em;
+	position: relative;
+	transition: 0.5s;
+	text-transform: uppercase;
+	margin-bottom: 20px;
+	
+}
+.button_1402_2.active {
+	letter-spacing: 0.25em;
+	transform: scaleY(1.1);
+	border: 2px solid var(--clr);
+	box-shadow: 0 0 35px var(--clr);
+	color: var(--clr);
+}
+.element_1402_2 {
+	position: absolute;
+	inset: 0;
+}
+.element_1402_2::before{
+	content: "";
+	position: absolute;
+	border: 2px solid var(--clr);
+	background: #27282c;
+	width: 14px;
+	height: 7px;
+	left: 80%;
+	top: -4.5px;
+	transition: 0.5s;
+}
+.button_1402_2.active  .element_1402_2::before{
+	content: "";
+	width: 24px;
+	height: 7px;
+	left: 14%;
+}
+.element_1402_2::after{
+	content: "";
+	position: absolute;
+	border: 2px solid var(--clr);
+	background: #27282c;
+	width: 14px;
+	height: 7px;
+	left: 14%;
+	bottom: -4.5px;
+	transition: 0.5s;
+}
+.button_1402_2.active  .element_1402_2::after{
+	content: "";
+	width: 24px;
+	height: 7px;
+	left: 80%;
+}
+
