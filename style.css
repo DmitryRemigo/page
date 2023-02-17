@@ -276,8 +276,27 @@ background-color: rgb(199, 198, 198);
     background-color: var(--color-main); 
    }
 }
-
-
+.header__ytube {
+position: absolute;
+right: 90px;
+}
+.header__ytube_logo {
+	background-image: url('./img/3dd19ad5e50aa45ef8f262a87055d2b5.png');
+	width: 65px;
+	height: 45px;
+	background-repeat:no-repeat ;
+	background-size: contain;
+	display: flex;
+	flex-direction: column;
+}
+.menu__logo{
+	position: absolute;
+	width: 70px;
+	height: 50px;
+	background-size: contain;
+	background-repeat: no-repeat;
+	left: 105px;
+}
 
 
 
