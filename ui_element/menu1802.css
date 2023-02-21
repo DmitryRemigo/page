@@ -1,0 +1,105 @@
+@import url('../zero.css');
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+
+.wrapper_menu1802{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	width: 100%;
+	height: 110px;
+	background: #390741;
+}
+ul{
+	position: relative;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+ul li {
+	list-style: none;
+}
+
+ul li a{
+	position: relative;
+	color: white;
+	font-size: 1.2em;
+	font-family: 'Poppins', sans-serif;
+	text-decoration: none;
+	display: inline-block;
+	padding: 15px 20px;
+	background: rgba(255, 255, 255, 0.05);
+	box-shadow: 0 15px 35px rgba(255, 255, 255, 0.2);
+	border-top: 1px solid rgba(255, 254, 255, 0.1); 
+	border-bottom: 1px solid rgba(255, 254, 255, 0.1);
+	z-index: 1000;
+	overflow: hidden;
+	backdrop-filter: blur(15px);
+}
+ul li a::before{
+	content: '';
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 50%;
+	background: rgba(255, 255, 255, 0.2);
+}
+ul li:first-child a{
+	border-top-left-radius: 20px;
+	border-bottom-left-radius: 20px;
+}
+ul li:nth-last-child(2) a {
+	border-top-right-radius: 20px;
+	border-bottom-right-radius: 20px;
+}
+.marker1802{
+	position: absolute;
+	width: 41px;
+	height: 41px;
+	z-index: 1;
+	transition: 0.5s;
+}
+.marker1802::before{
+	content: "";
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	width: 55px;
+	height: 55px;
+	border-radius: 50%;
+	transition: 0.5s;
+	background: rgb(1, 255, 255);
+	box-shadow: 0 0 10px rgb(1, 255, 255),
+	0 0 20px rgb(1, 255, 255),
+	0 0 35px rgb(1, 255, 255),
+	0 0 50px rgb(1, 255, 255);
+}
+ul li:nth-child(2):hover ~ .marker1802::before{
+	background: rgb(230, 255, 1);
+	box-shadow: 0 0 10px rgb(230, 255, 1),
+	0 0 20px rgb(230, 255, 1),
+	0 0 35px rgb(230, 255, 1),
+	0 0 50px rgb(230, 255, 1);
+}
+ul li:nth-child(3):hover ~ .marker1802::before{
+	background: rgb(255, 1, 1);
+	box-shadow: 0 0 10px rgb(255, 1, 1),
+	0 0 20px rgb(255, 1, 1),
+	0 0 35px rgb(255, 1, 1),
+	0 0 50px rgb(255, 1, 1);
+}
+ul li:nth-child(4):hover ~ .marker1802::before{
+	background: rgb(73, 255, 1);
+	box-shadow: 0 0 10px rgb(73, 255, 1),
+	0 0 20px rgb(73, 255, 1),
+	0 0 35px rgb(73, 255, 1),
+	0 0 50px rgb(73, 255, 1);
+}
+ul li:nth-child(5):hover ~ .marker1802::before{
+	background: rgb(255, 1, 234);
+	box-shadow: 0 0 10px rgb(255, 1, 234),
+	0 0 20px rgb(255, 1, 234),
+	0 0 35px rgb(255, 1, 234),
+	0 0 50px rgb(255, 1, 234);
+}

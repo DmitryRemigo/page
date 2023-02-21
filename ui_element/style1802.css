@@ -1,0 +1,74 @@
+@import url('./zero.css');
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+
+.button__wrap1801{
+	position: relative;
+	border: 3px solid rgb(27, 30, 43);
+}
+.button__wrap1801::before{
+	content: "";
+	position: absolute;
+	background: linear-gradient(45deg,#1eff00,#27282c,#27282c,#ff009d);
+	transition: 0.3s;
+	opacity: 0;
+}
+.button__wrap1801::after{
+	content: "";
+	position: absolute;
+	background: linear-gradient(45deg,#1eff00,#27282c,#ff009d);
+	transition: 0.3s;
+	opacity: 0;
+}
+.button1801{
+	position: relative;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	background: #1e243b;
+	z-index: 1;
+}
+
+.button__text1801{
+	font-family: 'Poppins', sans-serif;
+	font-weight: 600;
+	text-transform: uppercase;
+	color: #cfcfcf;
+	letter-spacing: 0.1em;
+	font-size: 2em;
+	padding: 10px 30px;
+	position: relative;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	overflow: hidden;
+	cursor: pointer;
+}
+.button__text1801::before{
+	content: "";
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	background: #2c3666;
+	z-index: -1;
+	margin-left: -100%;
+	transition: 0.3s;
+	filter: blur(30px);
+}
+.button__text1801:hover.button__text1801::before{
+	transform: skew(25deg);
+	filter: blur(0px);
+}
+
+
+.button__wrap1801:hover.button__wrap1801::before{
+	inset: -6px;
+	opacity: 1;
+}
+.button__wrap1801:hover.button__wrap1801::after{
+	inset: -4px; 
+	filter: blur(12px);
+	opacity: 1;
+	transform: 
+	skew(-8deg, -1deg)
+	rotate(-1deg);
+}
