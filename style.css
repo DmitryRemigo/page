@@ -457,6 +457,10 @@ right: 90px;
 	width: 100%;
 	margin-top: 15px;
 }
+.ul_anim{
+	display: flex;
+	flex-direction: column;
+}
 .list{
 transform: translate(150px, 0px);
 transition: all 0.1s ease 0s;
@@ -1232,7 +1236,7 @@ position: relative;
 }
 .telephon.active{
 	border: 2px solid rgb(255, 0, 0);
-	val
+
 }
 
 .telephon:focus{
